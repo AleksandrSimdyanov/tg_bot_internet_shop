@@ -48,7 +48,7 @@ cd TZ_tg_shop
 bash
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
-# или
+или
 .venv\Scripts\activate     # Windows
 
 3. Установка зависимостей:
