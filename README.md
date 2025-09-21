@@ -59,5 +59,17 @@ pip install -r requirements.txt
    Создайте файл .env в корне проекта:
    TOKEN=your_telegram_bot_token_here
    SQL_URL=sqlite+aiosqlite:///app/database/shop.db
+5. Инициализация базы данных:
+bash
+python -c "from app.database.models import async_main; import asyncio; asyncio.run(async_main())"
+6. Запуск бота:
+bash
+python main.py
 
+
+⚙️ Настройка
+Переменные окружения:
+Переменная	Описание	Пример
+TOKEN	Токен Telegram бота	123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
+SQL_URL	URL подключения к БД	sqlite+aiosqlite:///shop.db
 
