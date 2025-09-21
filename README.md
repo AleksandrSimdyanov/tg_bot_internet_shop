@@ -81,3 +81,48 @@ python main.py
 
 Админские команды:
 /admin - Панель администратора (только для админов)
+
+📁 Структура проекта
+TZ_tg_shop/
+├── app/
+│   ├── database/
+│   │   ├── images/          # Изображения товаров
+│   │   │   ├── phones/
+│   │   │   ├── laptops/
+│   │   │   └── headphones/
+│   │   ├── models.py        # Модели SQLAlchemy
+│   │   └── requests.py      # Функции работы с БД
+│   ├── handlers/
+│   │   ├── user_handler.py  # Обработчики пользователей
+│   │   ├── admin_handler.py # Обработчики админов
+│   │   └── admin_products.py # Управление товарами
+│   ├── states/
+│   │   ├── do_appeal.py     # Обращения в поддержку
+│   │   └── add_order.py     # Оформление заказов
+│   └── __init__.py
+├── tests/                   # Тесты
+│   ├── test_database.py     # Тесты базы данных
+│   ├── test_handlers.py     # Тесты обработчиков
+│   ├── test_keyboards.py    # Тесты клавиатур
+│   └── __init__.py
+├── keyboards.py            # Клавиатуры бота
+├── main.py                # Главный файл запуска
+├── requirements.txt       # Зависимости проекта
+└── .env                  # Переменные окружения
+
+
+🗃️ База данных
+Модели данных:
+Type - Категории товаров
+
+Product - Товары
+
+Cart - Корзина пользователя
+
+Order - Заказы
+
+OrderCart - Связь заказов и корзины
+
+Appeal - Обращения в поддержку
+
+User - Пользователи бота
