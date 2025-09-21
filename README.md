@@ -56,8 +56,8 @@ bash
 pip install -r requirements.txt
 
 4. Настройка окружения:
-   
-Создайте файл .env в корне проекта:
+   Создайте файл .env в корне проекта:
+   TOKEN=your_telegram_bot_token_here
+   SQL_URL=sqlite+aiosqlite:///app/database/shop.db
 
-TOKEN=your_telegram_bot_token_here
-SQL_URL=sqlite+aiosqlite:///app/database/shop.db
+
